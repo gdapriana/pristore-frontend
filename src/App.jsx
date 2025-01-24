@@ -8,10 +8,12 @@ import PlaceOrder from "./pages/place-order.jsx";
 import Contact from "./pages/contact.jsx";
 import Orders from "./pages/orders.jsx";
 import Product from "./pages/product.jsx";
+import Navbar from "./components/navbar.jsx";
 
 function App() {
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
