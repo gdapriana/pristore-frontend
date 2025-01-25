@@ -54,7 +54,7 @@ const Navbar = () => {
         <img onClick={() => setVisible(true)} src={assets.menu_icon || ""} alt="menu" className="w-5 cursor-pointer sm:hidden" />
       </div>
 
-      <div className={twMerge("absolute flex flex-col justify-start items-stretch top-0 right-0 bottom-0 overflow-hidden bg-white transition-all", visible ? "w-full" : "w-0")}>
+      <div className={twMerge("absolute z-[999999] flex flex-col justify-start items-stretch top-0 right-0 bottom-0 overflow-hidden bg-white transition-all", visible ? "w-full" : "w-0")}>
         <div className="flex p-8 justify-start items-center">
           <img onClick={() => setVisible(false)} src={assets.dropdown_icon || ""} className="w-4" alt="close"/>
         </div>
